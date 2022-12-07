@@ -143,16 +143,12 @@ def start(update, context):
     if EMOJI_THEME is True:
         buttons.buildbutton(f"😎 {START_BTN1_NAME}", f"{START_BTN1_URL}")
         buttons.buildbutton(f"🔥 {START_BTN2_NAME}", f"{START_BTN2_URL}")
-        buttons.buildbutton(f"📢 Channel", f"https://t.me/the_seeker_s_cave")
-        buttons.buildbutton(f"💰 Donate", f"https://www.paypal.com/donate/?hosted_button_id=VDL539XYV4A66")
     else:
         buttons.buildbutton(f"{START_BTN1_NAME}", f"{START_BTN1_URL}")
         buttons.buildbutton(f"{START_BTN2_NAME}", f"{START_BTN2_URL}")
-        buttons.buildbutton(f"Channel", f"https://t.me/the_seeker_s_cave")
-        buttons.buildbutton(f"Donate", f"https://www.paypal.com/donate/?hosted_button_id=VDL539XYV4A66")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
-        start_string = f'''🔥The Super Powered Master Torrenz V4 is online now 😈 | Use @TSSC_Game_Mirror_Robot for mirror games 💚. ❌U can't use me for mirror or leech games❌. 
+        start_string = f'''Bot is online now. 
         
 🔻For Now my Maximum DL Speed is 313 MB/s
 🔻For Now my Maximum UL Speed is 164 MB/s
